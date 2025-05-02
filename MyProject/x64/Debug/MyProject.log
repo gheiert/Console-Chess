@@ -1,0 +1,3 @@
+﻿  Board.cpp
+C:\Users\Gunnar.Heiert\source\repos\MyProject\MyProject\Board.cpp(570,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  MyProject.vcxproj -> C:\Users\Gunnar.Heiert\source\repos\MyProject\x64\Debug\MyProject.exe
