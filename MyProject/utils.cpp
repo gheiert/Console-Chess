@@ -40,9 +40,9 @@ std::string numberToLetter(int index)
     return col[index];
 }
 
-std::string formatCPUMove(int cpuMove)
+std::string formatWhiteRow(int whiteRow)
 {
-    switch (cpuMove)
+    switch (whiteRow)
     {
     case 0:
         return "8";
