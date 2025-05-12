@@ -1,4 +1,346 @@
 ﻿  Board.cpp
-C:\Users\Gunnar.Heiert\source\repos\MyProject\MyProject\Board.cpp(645,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Gunnar.Heiert\source\repos\MyProject\MyProject\Board.cpp(344,1): warning C4715: 'Board::isValidMove': not all control paths return a value
-  MyProject.vcxproj -> C:\Users\Gunnar.Heiert\source\repos\MyProject\x64\Debug\MyProject.exe
+  Knight.cpp
+  Main.cpp
+  Piece.cpp
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(26,56): error C2092: 'b' array element type cannot be function or abstract class type
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(41,18): error C2092: 'b' array element type cannot be function or abstract class type
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(41,39): error C2039: 'getBoard': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(41,27): error C2530: 'b': references must be initialized
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(42,54): error C2039: 'getValidComputerMoves': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(43,52): error C2039: 'getValidPlayerMoves': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(45,11): error C2259: 'Piece': cannot instantiate abstract class
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(45,11):
+      due to following members:
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(45,11):
+      'std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>> Piece::getPossibleMoves(int,int) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(22,43):
+      see declaration of 'Piece::getPossibleMoves'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(45,11):
+      'bool Piece::isValidMove(int,int,int,int,const Board &) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(23,15):
+      see declaration of 'Piece::isValidMove'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(45,11):
+      'std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>> Piece::getThreatenedSquares(int,int,const Board &) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(24,43):
+      see declaration of 'Piece::getThreatenedSquares'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(45,11): error C2512: 'Piece': no appropriate default constructor available
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(50,19): error C2039: 'printBoard': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(61,27): error C2039: 'isCheckmate': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(61,39): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(61,46): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(62,30): error C2039: 'isStalemate': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(62,42): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(62,49): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(70,23): error C2039: 'makeMove': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(71,23): error C2039: 'printBoard': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(73,78): error C2248: 'Piece::m_color': cannot access private member declared in class 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(44,8):
+      see declaration of 'Piece::m_color'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(73,123): error C2039: 'm_type': is not a member of 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(78,23): error C2039: 'setPossibleMoves': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(78,40): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(78,47): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(79,23): error C2039: 'setComputersTurn': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(83,27): error C2039: 'isCheckmate': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(83,39): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(83,46): error C2065: 'Black': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(84,30): error C2039: 'isStalemate': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(84,42): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(84,49): error C2065: 'Black': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(91,28): error C2039: 'getCurrentTurn': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(91,48): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(91,55): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(93,23): error C2039: 'setPossibleMoves': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(93,40): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(93,47): error C2065: 'Black': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(94,60): error C2039: 'getValidComputerMoves': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(95,41): error C2039: 'selectRandomMove': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,19): error C2259: 'Piece': cannot instantiate abstract class
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,19):
+      due to following members:
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,19):
+      'std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>> Piece::getPossibleMoves(int,int) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(22,43):
+      see declaration of 'Piece::getPossibleMoves'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,19):
+      'bool Piece::isValidMove(int,int,int,int,const Board &) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(23,15):
+      see declaration of 'Piece::isValidMove'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,19):
+      'std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>> Piece::getThreatenedSquares(int,int,const Board &) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(24,43):
+      see declaration of 'Piece::getThreatenedSquares'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,28): error C2259: 'Piece': cannot instantiate abstract class
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,28):
+      due to following members:
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,28):
+      'std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>> Piece::getPossibleMoves(int,int) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(22,43):
+      see declaration of 'Piece::getPossibleMoves'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,28):
+      'bool Piece::isValidMove(int,int,int,int,const Board &) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(23,15):
+      see declaration of 'Piece::isValidMove'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(96,28):
+      'std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>> Piece::getThreatenedSquares(int,int,const Board &) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(24,43):
+      see declaration of 'Piece::getThreatenedSquares'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(97,23): error C2039: 'makeMove': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(98,23): error C2039: 'printBoard': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(101,39): error C2248: 'Piece::m_color': cannot access private member declared in class 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(44,8):
+      see declaration of 'Piece::m_color'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(101,84): error C2039: 'm_type': is not a member of 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(111,27): error C2039: 'isCheckmate': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(111,39): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(111,46): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(112,30): error C2039: 'isStalemate': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(112,42): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(112,49): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(119,28): error C2039: 'getCurrentTurn': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(119,48): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(119,55): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(121,23): error C2039: 'setPossibleMoves': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(121,40): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(121,47): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(122,41): error C2039: 'selectRandomMove': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(123,19): error C2259: 'Piece': cannot instantiate abstract class
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(123,19):
+      due to following members:
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(123,19):
+      'std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>> Piece::getPossibleMoves(int,int) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(22,43):
+      see declaration of 'Piece::getPossibleMoves'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(123,19):
+      'bool Piece::isValidMove(int,int,int,int,const Board &) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(23,15):
+      see declaration of 'Piece::isValidMove'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(123,19):
+      'std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>> Piece::getThreatenedSquares(int,int,const Board &) const': is abstract
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(24,43):
+      see declaration of 'Piece::getThreatenedSquares'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(124,23): error C2039: 'makeMove': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(125,23): error C2039: 'printBoard': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(128,39): error C2248: 'Piece::m_color': cannot access private member declared in class 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(44,8):
+      see declaration of 'Piece::m_color'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(128,84): error C2039: 'm_type': is not a member of 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(135,27): error C2039: 'isCheckmate': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(135,39): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(135,46): error C2065: 'Black': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(136,30): error C2039: 'isStalemate': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(136,42): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(136,49): error C2065: 'Black': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(144,23): error C2039: 'makeMove': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(145,23): error C2039: 'printBoard': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(147,78): error C2248: 'Piece::m_color': cannot access private member declared in class 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(44,8):
+      see declaration of 'Piece::m_color'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(147,123): error C2039: 'm_type': is not a member of 'Piece'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Piece.h(8,7):
+      see declaration of 'Piece'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(152,23): error C2039: 'setPossibleMoves': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(152,40): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(152,47): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(153,23): error C2039: 'setComputersTurn': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(162,56): error C2092: 'b' array element type cannot be function or abstract class type
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(166,20): error C2039: 'getCurrentTurn': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(166,40): error C2653: 'Color': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(166,47): error C2065: 'White': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Main.cpp(186,23): error C2039: 'readPlayerMove': is not a member of 'Board'
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\Board.h(7,7):
+      see declaration of 'Board'
+  
+  Rook.cpp
+  utils.cpp
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(5,13): error C2450: a switch expression of type 'Piece *' is not valid
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(5,13):
+      Integral expression required
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(7,10): error C2653: 'PieceType': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(7,21): error C2065: 'Pawn': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(7,21): error C2131: expression did not evaluate to a constant
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(7,21):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(9,10): error C2653: 'PieceType': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(9,21): error C2065: 'Rook': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(9,21): error C2131: expression did not evaluate to a constant
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(9,21):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(11,10): error C2653: 'PieceType': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(11,21): error C2065: 'Knight': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(11,21): error C2131: expression did not evaluate to a constant
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(11,21):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(13,10): error C2653: 'PieceType': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(13,21): error C2065: 'Bishop': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(13,21): error C2131: expression did not evaluate to a constant
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(13,21):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(15,10): error C2653: 'PieceType': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(15,21): error C2065: 'Queen': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(15,21): error C2131: expression did not evaluate to a constant
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(15,21):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(17,10): error C2653: 'PieceType': is not a class or namespace name
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(17,21): error C2065: 'King': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(17,21): error C2131: expression did not evaluate to a constant
+      C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(17,21):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(7,21): error C2051: case expression not constant
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(9,21): error C2051: case expression not constant
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(11,21): error C2051: case expression not constant
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(13,21): error C2051: case expression not constant
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(15,21): error C2051: case expression not constant
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(17,21): error C2051: case expression not constant
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(21,5): warning C4065: switch statement contains 'default' but no 'case' labels
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(72,10): error C2039: 'cout': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.43.34808\include\iomanip(22,1):
+      see declaration of 'std'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(72,10): error C2065: 'cout': undeclared identifier
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(77,10): error C2039: 'cout': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.43.34808\include\iomanip(22,1):
+      see declaration of 'std'
+  
+C:\Users\Gunnar.Heiert\source\repos\MyProject v1.2\MyProject\utils.cpp(77,10): error C2065: 'cout': undeclared identifier
+  Generating Code...

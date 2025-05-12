@@ -1,6 +1,6 @@
 #include "utils.h"
 
-std::string pieceTypeToString(PieceType type)
+std::string pieceTypeToString(Piece* type)
 {
     switch (type)
     {
@@ -21,13 +21,13 @@ std::string pieceTypeToString(PieceType type)
     }
 }
 
-std::string colorToString(Color color)
+std::string colorToString(Piece::Color color)
 {
     switch (color)
     {
-    case Color::White:
+    case Piece::Color::White:
         return "White";
-    case Color::Black:
+    case Piece::Color::Black:
         return "Black";
     default:
         return "Error";

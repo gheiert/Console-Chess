@@ -1,12 +1,14 @@
 // ******************************************
 // Include of External Package Specifications
 // ******************************************
+#include "Piece.h"
 #include "Board.h"
 #include "utils.h"
 
 // ******************************************
 // Include of system header files
 // ******************************************
+#include <iostream>
 #include <iomanip>
 #include <string>
 #include <random>
@@ -100,61 +102,6 @@ int main()
                 + numberToLetter(randomMove.fromCol) + std::to_string(randomMove.fromRow)
                 + " to " + numberToLetter(randomMove.toCol) + std::to_string(randomMove.toRow) << std::endl;
             resetTextColor();
-
-            //while (!isTurnOver && !isGameOver)
-            //{
-            //    // ------------------------------------------------- Player ------------------------------------------------------
-            //    
-            //    /*std::cout << std::setw(80) << std::right <<
-            //        (gameBoard.getCurrentTurn() == Color::White ? "White" : "Black") << "'s move (e.g. , e2 , e4 , etc.): ";
-            //    std::cin >> from >> to;*/
-
-            //    isPlayerEntryValid(gameBoard, b, pieceH, fromRow, fromCol, toRow, toCol);
-
-            //    /*int fromCol = from[0] - 'a';
-            //    int fromRow = 8 - (from[1] - '0');
-            //    int toCol = to[0] - 'a';
-            //    int toRow = 8 - (to[1] - '0');
-            //    Piece pieceH = b[fromRow][fromCol];*/
-
-            //    if (gameBoard.readPlayerMove(fromRow, fromCol, toRow, toCol))
-            //    {
-            //        gameBoard.makeMove(fromRow, fromCol, toRow, toCol);
-            //        gameBoard.printBoard();
-            //        setTextColor(GREEN);
-            //        std::cout << std::setw(100) << std::right << colorToString(pieceH.m_color) << " " << pieceTypeToString(pieceH.m_type) <<
-            //            " was moved from " << fromCol << fromRow << " to " << toRow << toCol << std::endl;
-            //        resetTextColor();
-            //        
-            //        // Generate the player's possible moves to check if the player has put the computer into check
-            //        gameBoard.setPossibleMoves(Color::White, validPlayerMoves);
-            //        gameBoard.setComputersTurn();
-
-            //        // ------------------------------------------------- Computer -------------------------------------------------
-
-            //        std::cout << std::setw(80) << std::right <<
-            //            (gameBoard.getCurrentTurn() == Color::White ? "White" : "Black") << "'s move:" << std::endl;
-
-            //        gameBoard.setPossibleMoves(Color::Black, validComputerMoves);
-            //        const std::vector<Move> validMoves = gameBoard.getValidComputerMoves();
-            //        Move randomMove = gameBoard.selectRandomMove(validMoves);
-            //        Piece pieceCPU = b[randomMove.fromRow][randomMove.fromCol];
-            //        gameBoard.makeMove(randomMove.fromRow, randomMove.fromCol, randomMove.toRow, randomMove.toCol);
-            //        gameBoard.printBoard();
-            //        setTextColor(RED);
-            //        std::cout << std::setw(100) << std::right <<
-            //            colorToString(pieceCPU.m_color) + " " + pieceTypeToString(pieceCPU.m_type) + " was moved from "
-            //            + numberToLetter(randomMove.fromCol) + formatCPUMove(randomMove.fromRow)
-            //            + " to " + numberToLetter(randomMove.toCol) + formatCPUMove(randomMove.toRow) << std::endl;
-            //        resetTextColor();
-
-            //        //gameBoard.displayCapturedPieces(pieceCPU.m_color);
-            //        isTurnOver = true;
-            //    }
-
-            //    //gameBoard.displayCapturedPieces(pieceH.m_color);
-
-            //} 
         }
         
         else //Computer = White, Player = Black
@@ -205,38 +152,6 @@ int main()
             gameBoard.setPossibleMoves(Color::White, validPlayerMoves, b);
             gameBoard.setComputersTurn();
 
-            //while (!isTurnOver && !isGameOver)
-            {
-                // ------------------------------------------------- Player -----------------------------------------------
-                //std::cout << std::setw(80) << std::right <<
-                //    (gameBoard.getCurrentTurn() == Color::White ? "White" : "Black") << "'s move (e.g. , e2 , e4 , etc.): ";
-                //std::cin >> from >> to;
-
-                //int fromCol = from[0] - 'a';
-                //int fromRow = 8 - (from[1] - '0');
-                //int toCol = to[0] - 'a';
-                //int toRow = 8 - (to[1] - '0');
-                //Piece pieceH = b[fromRow][fromCol];
-
-                //if (gameBoard.readPlayerMove(fromRow, fromCol, toRow, toCol))
-                //{
-                //    gameBoard.makeMove(fromRow, fromCol, toRow, toCol);
-                //    gameBoard.printBoard();
-                //    setTextColor(GREEN);
-                //    std::cout << std::setw(100) << std::right << colorToString(pieceH.m_color) << " " << pieceTypeToString(pieceH.m_type) <<
-                //        " was moved from " << fromCol << fromRow << " to " << toRow << toCol << std::endl;
-                //    resetTextColor();
-
-                //    // Generate the player's possible moves to check if the player has put the computer into check
-                //    gameBoard.setPossibleMoves(Color::Black, validPlayerMoves);
-                //    gameBoard.setComputersTurn();
-                //    isTurnOver = true;
-                //}
-
-                //gameBoard.displayCapturedPieces(pieceCPU.m_color);
-                //gameBoard.displayCapturedPieces(pieceH.m_color);
-
-            } 
         }
     }
     
